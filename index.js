@@ -15,9 +15,9 @@ app.use(
   morgan(":method :url :status :res[content-length] - :response-time ms :body")
 );
 
-app.get("/", (request, response) => {
-  response.send("<h1>test</h1>");
-});
+// app.get("/", (request, response) => {
+//   response.send("<h1>test</h1>");
+// });
 
 app.get("/info", (request, response) => {
   const personCount = persons.length;
